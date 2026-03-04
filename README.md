@@ -1,2 +1,1 @@
-# MYDAILYWORK
-Web Development Internship Tasks
+// API route definitions for the application
