@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Quiz | QuizMaker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">Q</span>
+                <span class="logo-text">QuizMaker</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Features</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="login.html" class="nav-link btn-secondary small">Log In</a>
+                <a href="register.html" class="nav-link btn-primary small" style="padding: 0.5rem 1.25rem;">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container fade-in-up">
+                <h2 id="quizHeaderTitle">General Knowledge Trivia</h2>
+                <p id="quizHeaderDesc">Test your knowledge with these fun questions!</p>
+            </div>
+        </section>
+
+        <section class="quiz-taker-container fade-in-up delay-1">
+            <div class="card" id="quizCard">
+                <div class="quiz-progress">
+                    <span id="progressText">Question 1 of 5</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progressBar"></div>
+                    </div>
+                </div>
+
+                <div id="questionWrapper">
+                    <h3 class="question-title" id="questionTitle">Loading question...</h3>
+                    <div class="options-list" id="optionsList">
+                        <!-- Options injected via JS -->
+                    </div>
+                </div>
+
+                <div class="quiz-taker-actions">
+                    <button type="button" id="nextBtn" class="btn-primary ripple" disabled>Next Question</button>
+                </div>
+            </div>
+
+            <!-- Results View (Hidden initially) -->
+            <div class="card results-container" id="resultsCard" style="display: none;">
+                <h2>Quiz Complete!</h2>
+                <p>Here's how you did:</p>
+                <div class="score-display">
+                    <span id="scoreText">0</span> / <span id="totalText">0</span>
+                </div>
+                <p id="feedbackText" style="margin-bottom: 2rem;">Great job!</p>
+
+                <div id="answersReview" class="answers-review">
+                    <!-- Correct answers and user answers will be injected here -->
+                </div>
+
+                <div class="quiz-taker-actions" style="justify-content: center; gap: 1rem; margin-top: 2rem;">
+                    <a href="take-quiz.html" class="btn-secondary ripple">Retake Quiz</a>
+                    <a href="index.html" class="btn-primary ripple">Back Home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="quiz-taker.js"></script>
+</body>
+
+</html>

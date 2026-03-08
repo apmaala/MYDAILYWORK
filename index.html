@@ -1,107 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My Portfolio</title>
-   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaker | Create and Take Quizzes Anywhere</title>
+    <meta name="description"
+        content="The ultimate online quiz maker. Create professional quizzes or test your knowledge with our premium quiz platform.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
 <body>
-
-<!-- Navbar -->
-<nav>
-    <h2 class="logo">Malashree A P</h2>
-    <ul>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- Hero Section -->
-<section class="hero">
-    <div class="left">
-        <h1>Hi all I'm <span>Malashree A P</span></h1>
-        <p>
-            Passionate about Web Development. I enjoy building responsive, user-friendly websites and continuously improving my technical skills and I enjoy turning ideas into functional web solutions.
-Always eager to learn new technologies and grow as a developer.
-        </p>
-        <div class="social-icons">
-
-    <a href="https://github.com/yourusername" target="_blank">
-        <img src="C:\Users\User'\Documents\github-repositories-1.jpg" alt="GitHub">
-    </a>
-
-    <a href="https://linkedin.com/in/yourprofile" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-    </a>
-
-    <a href="mailto:yourmail@gmail.com">
-        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
-    </a>
-
-</div>
-</div>
-<div class="right">
-        <img src="C:\Users\User'\Downloads\undraw_proud-designer_1rcm.png" alt="Girl Avatar">
-</div>
-</section>
-
-<!-- Skills -->
-<section id="skills" class="skills-section">
-
-    <div class="skills-left">
-        <img src="c:\Users\User'\Downloads\undraw_focused-dev_gqoa.png" alt="Formal Girl">
-    </div>
-
-    <div class="skills-right">
-        <h2>Skills</h2>
-
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Java</li>
-            <li>Python</li>
-        </ul>
-    </div>
-
-</section>
-
-<!-- Projects -->
-<section id="projects" class="projects-section">
-
-    <div class="projects-left">
-        <h2>Projects</h2>
-
-        <div class="project-item">
-            <h3>Restaurant Management System</h3>
-            <p>
-                Built using React with features like online ordering, table booking,
-                delivery tracking, and bill generation.
-            </p>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">Q</span>
+                <span class="logo-text">QuizMaker</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="quizzes.html" class="nav-link">Quizzes</a>
+                <a href="#" class="nav-link">Features</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="login.html" class="nav-link btn-secondary small">Log In</a>
+                <a href="register.html" class="nav-link btn-primary small" style="padding: 0.5rem 1.25rem;">Sign Up</a>
+            </nav>
         </div>
-        <div class="project-item">
-            <h3>Graph Based MOOC Course Recommendation System</h3>
-            <p>
-                A graph-based MOOC Course Recommendation System built using Neo4j to model relationships between users, courses, and skills.
-            </p>
+    </header>
+
+    <main>
+        <section class="hero-section" id="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="fade-in-up">Master Any Topic with <span class="highlight">QuizMaker</span></h1>
+                <p class="fade-in-up delay-1">The fastest way to create, share, and analyze quizzes for students,
+                    employees, or friends. Beautiful, intuitive, and fun.</p>
+                <div class="cta-buttons fade-in-up delay-2">
+                    <button id="createQuizBtn" class="btn-primary ripple">
+                        <span class="btn-icon">✨</span> Create Quiz
+                    </button>
+                    <button id="takeQuizBtn" class="btn-secondary ripple">
+                        <span class="btn-icon">🎯</span> Take Quiz
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-preview">
+            <div class="container">
+                <div class="section-badge fade-in">Why Choose Us?</div>
+                <h2 class="fade-in">Everything You Need to Succeed</h2>
+                <div class="feature-grid">
+                    <div class="feature-card fade-in delay-1">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Lightning Fast</h3>
+                        <p>Create quizzes in minutes with our intuitive drag-and-drop editor.</p>
+                    </div>
+                    <div class="feature-card fade-in delay-2">
+                        <div class="feature-icon">📊</div>
+                        <h3>Deep Analytics</h3>
+                        <p>Track results and performance with detailed, real-time reports.</p>
+                    </div>
+                    <div class="feature-card fade-in delay-3">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Secure & Private</h3>
+                        <p>Your data is protected with industry-standard security and encryption.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 QuizMaker. All rights reserved. Designed for the future of learning.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                </div>
+            </div>
         </div>
+    </footer>
 
-    </div>
-
-    <div class="projects-right">
-        <img src="C:\Users\User'\Downloads\undraw_typing-code_6t2b.png" alt="Projects Illustration">
-    </div>
-
-</section>
-
-<!-- Contact -->
-<section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>Email: shreeapmaala@gmail.com</p>
-</section>
-
-<!-- Footer -->
-<footer>
-    <p>©All rights reserved.</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Quiz | QuizMaker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">Q</span>
+                <span class="logo-text">QuizMaker</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Features</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="login.html" class="nav-link btn-secondary small">Log In</a>
+                <a href="register.html" class="nav-link btn-primary small" style="padding: 0.5rem 1.25rem;">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container fade-in-up">
+                <h2>Create Your Quiz</h2>
+                <p>Build your quiz by adding questions and multiple-choice options.</p>
+            </div>
+        </section>
+
+        <section class="quiz-creator-container fade-in-up delay-1">
+            <div class="card">
+                <div class="form-group">
+                    <label for="quizTitle">Quiz Title</label>
+                    <input type="text" id="quizTitle" class="form-control" placeholder="e.g., General Knowledge Trivia"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="quizDescription">Description (Optional)</label>
+                    <textarea id="quizDescription" class="form-control" rows="3"
+                        placeholder="Briefly describe what this quiz is about..."></textarea>
+                </div>
+            </div>
+
+            <div id="questionsContainer">
+                <!-- Questions will be dynamically added here -->
+            </div>
+
+            <button type="button" id="addQuestionBtn" class="btn-add-question ripple">
+                <span>➕</span> Add Another Question
+            </button>
+
+            <div class="quiz-actions card">
+                <button type="button" class="btn-secondary ripple">Cancel</button>
+                <button type="button" id="saveQuizBtn" class="btn-primary ripple">Save & Publish Quiz</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="quiz-creator.js"></script>
+</body>
+
+</html>
